@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/defaultdesign}">
+	
+	<th:block layout:fragment="BaseStructure">
+		<title layout:fragment="title">CEO 인사말</title>
+		<link th:href="@{/css/design.css}" rel="stylesheet"/>
+	</th:block>		
+	
+	<body>
+		<div layout:fragment="content" class="content">
+			<h2>학점 출력</h2>
+			<p th:text = "'이름은 ' +${hakjumVO.name}"/>
+			<p th:text = "'점수는 ' +${hakjumVO.score}"/>
+			<p th:text = "'학점은 ' +${hakjumVO.hak} + '이군요'"/>
+			
+			<a href = "/hakjum">다른 학생 학점 계산하기</a>
+		</div>
+	</body>
+</html>

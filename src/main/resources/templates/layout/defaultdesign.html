@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>기본 제목</title>
+<link rel="stylesheet" th:href="@{/css/commons.css}" />
+</head>
+<body>
+	<div class="page-container">
+		<!-- 공통 헤더 -->
+		<div th:replace="commons/header :: header"></div>
+
+		<!-- 콘텐츠 영역 -->
+		<div class="main-container">
+			<div th:replace="commons/left-side :: left-side"></div>
+			<main layout:fragment="content" class="content" ></main>
+		</div>
+
+		<!-- 푸터 -->
+		<div th:replace="commons/footer :: footer"></div>
+	</div>
+
+
+</body>
+
+</html>

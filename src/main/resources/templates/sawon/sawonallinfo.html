@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/defaultdesign}">
+
+<head>
+	<link th:href="@{css/design.css}" rel="stylesheet" />
+</head>
+
+<body>
+    <main layout:fragment="content" class="content">
+        <table>
+            <tr>
+                <th>이름ㄹㅇ</th>
+                <th>전화번호</th>
+            </tr>
+            <tr th:each="item : ${list}">
+                <td th:text="${item.irum}"></td>
+                <td th:text="${item.tel}"></td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

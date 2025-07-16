@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/defaultdesign}">
+	
+	<th:block layout:fragment="BaseStructure">
+		<title layout:fragment="title">CEO 인사말</title>
+		<link th:href="@{/css/design.css}" rel="stylesheet"/>
+	</th:block>		
+	
+	<body>
+		<div layout:fragment="content" class="content">
+			<h3>CEO 인사</h3>
+			<p>안녕하십니까</p>
+			<p>여러분과 함꼐하는 김섬김입니다</p>
+			<a th:href="@{ceo}">CEO 인사말</a>
+		</div>
+	</body>
+</html>

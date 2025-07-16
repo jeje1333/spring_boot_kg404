@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/defaultdesign}">
+	
+	<th:block layout:fragment="BaseStructure">
+		<title layout:fragment="title">홈페이지</title>
+		<link th:href="@{/css/design.css}" rel="stylesheet"/>
+	</th:block>		
+	
+	<body>
+		<div layout:fragment="content" class="content">
+			<h3>환영합니다</h3>
+			<p>여기는 content.html의 content부분입니다</p>
+			<p>내용 고치고 새로고침 = 적용</p>
+		</div>
+	</body>
+</html>
