@@ -1,0 +1,87 @@
+/* 기본 배경 및 텍스트 컬러 */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0fff4; /* 아주 연한 초록 */
+    color: #2e7d32; /* 진한 초록 */
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 헤더, 푸터 스타일 */
+header, footer {
+    background-color: #81c784; /* 중간 톤의 초록 */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* 사이드바 스타일 */
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column; /* ✅ 세로 정렬 */
+    background-color: #c8e6c9;
+    padding: 1rem;
+    width: 250px;
+    border: 2px solid #a5d6a7;
+    border-radius: 8px;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+.left-side a {
+    text-decoration: none;
+    color: #2e7d32;
+    background-color: #e8f5e9;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 6px;
+    border: 1px solid #a5d6a7;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+.left-side a:hover {
+    background-color: #a5d6a7;
+    color: white;
+    transform: translateX(5px); /* ✅ hover 애니메이션 */
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #ffffff;
+
+    /* ✅ 전체 테두리 */
+    border: 2px solid #a5d6a7;
+    border-radius: 8px;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+
+/* 카드나 박스에 쓸 수 있는 요소 */
+.card {
+    background-color: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 128, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.2);
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/defaultdesign}">
+	
+	<th:block layout:fragment="BaseStructure">
+		<title layout:fragment="title">CEO 인사말</title>
+		<link th:href="@{/css/design.css}" rel="stylesheet"/>
+	</th:block>		
+	
+	<body>
+		<div layout:fragment="content" class="content">
+			<img src="../img/spring.jpg" width=200>
+			<h1><div>아하 정적 html ~~~~~</div></h1>
+		</div>
+	</body>
+</html>
