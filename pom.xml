@@ -11,7 +11,7 @@
 	<groupId>com.sboot</groupId>
 	<artifactId>sijak</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Spring_Boot_5</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -86,6 +86,12 @@
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		    <version>4.3.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.oracle.database.jdbc</groupId>
+		    <artifactId>ojdbc8</artifactId>
+		    <version>21.5.0.0</version>
 		</dependency>
 		
 	</dependencies>
