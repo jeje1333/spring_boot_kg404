@@ -1,0 +1,30 @@
+warning: in the working copy of 'pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/application.properties', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/pom.xml b/pom.xml[m
+[1mindex 36f7f79..b59157a 100644[m
+[1m--- a/pom.xml[m
+[1m+++ b/pom.xml[m
+[36m@@ -81,12 +81,6 @@[m
+ 		    <artifactId>mybatis-spring-boot-starter</artifactId>[m
+ 		    <version>3.0.4</version>[m
+ 		</dependency>[m
+[31m-		<!--유레카-->[m
+[31m-		<dependency>[m
+[31m-		    <groupId>org.springframework.cloud</groupId>[m
+[31m-		    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>[m
+[31m-		    <version>4.3.0</version>[m
+[31m-		</dependency>[m
+ 		[m
+ 		<dependency>[m
+ 		    <groupId>com.oracle.database.jdbc</groupId>[m
+[1mdiff --git a/src/main/resources/application.properties b/src/main/resources/application.properties[m
+[1mindex 2fa6c88..ee28032 100644[m
+[1m--- a/src/main/resources/application.properties[m
+[1m+++ b/src/main/resources/application.properties[m
+[36m@@ -1,5 +1,6 @@[m
+ spring.application.name=Spring_Boot_5[m
+ [m
+[32m+[m[32mserver.port = 80[m
+ [m
+ # OracleDB 연결 정보[m
+ spring.datasource.url=jdbc:oracle:thin:@//localhost:1521/xe[m
